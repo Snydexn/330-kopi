@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Kenyan Coffee';
+  src: url('/assets/fonts/kenyan coffee.ttf') format('truetype');  
+  font-weight: normal;
+  font-style: normal;
+}
+
+.navbar {
+  font-family: 'Kenyan Coffee', sans-serif;
+}
+
+@font-face {
+  font-family: 'Want Coffee';
+  src: url('/assets/fonts/Want Coffee.ttf') format('truetype');  
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.infopromo {
+  font-family: 'Want Coffee', sans-serif;
+}
+
+@font-face {
+  font-family: 'Louis George Cafe';
+  src: url('/assets/fonts/Louis George Cafe.ttf') format('truetype');  
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.rekomendasi {
+  font-family: 'Louis George Cafe', sans-serif;
+}
