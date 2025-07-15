@@ -1,51 +1,75 @@
 import React from 'react';
 
+const menu = [
+  {
+    name: 'Almara Coffee',
+    image: '/assets/almara.png',
+    desc: 'Almara Kopi adalah salah satu menu andalan di 3:30 Kopi.',
+    price: '22.000',
+  },
+  {
+    name: 'Ilusi Coffee',
+    image: '/assets/ilusi.png',
+    desc: 'Ilusi Kopi adalah salah satu menu andalan di 3:30 Kopi.',
+    price: '25.000',
+  },
+  {
+    name: 'Charcoal',
+    image: '/assets/charcoal.png',
+    desc: 'Minuman susu segar dengan bubuk charcoal aktif dari 3:30 Kopi.',
+    price: '22.000',
+  },
+  {
+    name: 'Ice Matcha',
+    image: '/assets/matcha.png',
+    desc: 'Minuman berbahan matcha pilihan dan susu segar.',
+    price: '25.000',
+  }
+];
+
 const Rekomendasi = () => {
   return (
-    <div className="min-h-screen bg-[url('/assets/rekomendasi-bg.png')] bg-cover bg-center py-10" style={{ fontFamily: 'Louis George Cafe' }}>
-        <h1 className="text-4xl text-center text-white mb-12" style={{ fontFamily: 'Want Coffee' }}>Rekomendasi Barista</h1>
-        <div className="flex flex-wrap justify-around gap-6">
-          {/* Almara Coffee Card */}
-          <div className="bg-[#5F3826] w-60 p-2 text-center rounded-lg shadow-lg">
-            <img src="/assets/almara.png" alt="Almara Coffee" className="max-w-[100%] h-auto rounded-lg shadow-lg" />
-            <h3 className="text-2xl text-white mt-4">Almara Coffee</h3>
-            <p className="text-sm text-white">Almara Kopi adalah salah satu menu andalan di 3:30 Kopi.</p>
-            <div className="relative left-30 bg-[#C59464] text-white w-20 rounded-lg text-lg mt-4">
-              22.000
-            </div>
-          </div>
+    <div
+  className="w-full min-h-screen p-4 bg-[#C59464] bg-[url('/assets/rekomendasi-bg.png')] bg-no-repeat bg-center bg-contain"
+  style={{ fontFamily: 'Louis George Cafe' }}
+>
 
-          {/* Ilusi Coffee Card */}
-          <div className="bg-[#5F3826] w-60 p-2 text-center rounded-lg shadow-lg">
-            <img src="/assets/ilusi.png" alt="Ilusi Coffee" className="max-w-[100%] h-auto object-cover rounded-lg" />
-            <h3 className="text-2xl font-semibold text-white mt-4">Ilusi Coffee</h3>
-            <p className="text-sm text-white">Ilusi Kopi adalah salah satu menu andalan di 3:30 Kopi.</p>
-            <div className="relative left-30 bg-[#C59464] text-white w-20 rounded-lg text-lg mt-4">
-              25.000
-            </div>
-          </div>
 
-          {/* Charcoal Card */}
-          <div className="bg-[#5F3826] w-60 p-2 text-center rounded-lg shadow-lg">
-            <img src="/assets/charcoal.png" alt="Charcoal" className="max-w-[100%] h-auto object-cover rounded-lg" />
-            <h3 className="text-2xl font-semibold text-white mt-4">Charcoal</h3>
-            <p className="text-sm text-white">Minuman susu segar dengan bubuk charcoal aktif dari 3:30 Kopi.</p>
-            <div className="relative left-30 bg-[#C59464] text-white w-20 rounded-lg text-lg mt-4">
-              22.000
-            </div>
-          </div>
+      <h1
+        className="text-4xl p-4 text-center text-white mb-12"
+        style={{ fontFamily: 'Want Coffee' }}
+      >
+        Rekomendasi Barista
+      </h1>
 
-          {/* Ice Matcha Card */}
-          <div className="bg-[#5F3826] w-60 p-2 text-center rounded-lg shadow-lg">
-            <img src="/assets/matcha.png" alt="Ice Matcha" className="max-w-[100%] h-auto object-cover rounded-lg" />
-            <h3 className="text-2xl font-semibold text-white mt-4">Ice Matcha</h3>
-            <p className="text-sm text-white">Minuman berbahan matcha pilihan dan susu segar.</p>
-            <div className="relative left-30 bg-[#C59464] text-white w-20 rounded-lg text-lg mt-4">
-              25.000
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-15 justify-items-center">
+        {menu.map((item, index) => (
+          <div
+            key={index}
+            className="bg-[#5F3826] rounded-2xl shadow-lg overflow-hidden flex flex-col h-auto hover:scale-105 transition-transform duration-300 w-[300px] sm:w-[280px]"
+          >
+            <img
+              src={item.image}
+              alt={item.name}
+              className="w-full h-72 object-cover"
+            />
+            <div className="flex flex-col justify-between flex-1 p-4">
+              <div className="flex-1">
+                <h3 className="text-xl font-semibold text-white mb-1">
+                  {item.name}
+                </h3>
+                <p className="text-sm text-white leading-relaxed mb-4">
+                  {item.desc}
+                </p>
+              </div>
+              <div className="bg-[#C59464] text-white text-center py-1 rounded-md w-24 mx-auto font-semibold text-sm">
+                {item.price}
+              </div>
             </div>
           </div>
-        </div>
+        ))}
       </div>
+    </div>
   );
 };
 

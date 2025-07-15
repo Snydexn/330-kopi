@@ -6,7 +6,13 @@ import Rekomendasi from './pages/Home/Rekomendasi';
 import History from './pages/Home/History';
 import Navigationbar from './components/Navigationbar';
 import Footer from './components/Footer';
-import Kopi from './pages/Menu/Kopi';
+import GaleriSlider from './pages/Tentang/GaleriSlider';
+import MenuKopi from './pages/Menu/MenuKopi';
+import MenuNonKopi from './pages/Menu/MenuNonKopi';
+import MenuMakanan from './pages/Menu/MenuMakanan';
+import Informasi from './pages/Informasi';
+import Testimoni from './pages/Testimoni';
+
 
 
 function App() {
@@ -33,15 +39,34 @@ function App() {
         <Route path="/tentang" element={
           <>
           <Tentang />
+          <GaleriSlider />
           
           </>
           } />
-        <Route path="/menu" element={
+
+          <Route path="/menu" element={
           <>
-          <Kopi />
+          <MenuKopi />
+          <MenuNonKopi />
+          <MenuMakanan />
           
           </>
           } />
+
+          <Route path="/informasi" element={
+          <>
+          <Informasi />
+          
+          </>
+          } />
+
+           <Route path="/testimoni" element={
+          <>
+          <Testimoni />
+          
+          </>
+          } />
+
 
       </Routes>
       <Footer />

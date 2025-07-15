@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const History = () => {
   return (
@@ -27,32 +28,48 @@ const History = () => {
       <div className="bg-[#C59464] p-0 min-h-screen">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-8">
         {/* Left Section - MAPS Image */}
-          <div className="w-full max-w-sm p-2">
+          <div className="w-full p-2">
             <img
               src="/assets/maps.png"
               alt="3:30 Kopi Location"
-              className="max-w-[130%] h-auto rounded-lg shadow-xl"
+              className="w-full h-auto rounded-lg"
             />
           </div> 
         
          {/* Right Section - ALAMAT, SOSIAL MEDIA */}
-        <div className="space-y-10 text-white" style={{ fontFamily: 'Kenyan Coffee' }}>
+        <div className="space-y-10 p-5 text-white" style={{ fontFamily: 'Kenyan Coffee' }}>
           {/* ALAMAT Section */}
-          <div className="bg-[#5F3826] p-3 rounded-lg shadow-lg tracking-wider">
+          <a
+          href='https://maps.app.goo.gl/z9gKqXNMZkJVEBjp6'
+          target='_blank'
+          rel="noopener noreferrer"
+          className='block mb-10'>
+          <div className="bg-[#5F3826] p-3 rounded-lg shadow-lg tracking-wider hover:bg-[#744734] transition-all">
             <h3 className="text-2xl text-center">ALAMAT</h3>
           </div>
+          </a>
 
-          <div className="space-y-10">
-          {/* No Kontak Section */}
-          <div className="bg-[#5F3826] p-3 rounded-lg shadow-lg tracking-wider">
-            <h3 className="text-2xl text-center">NO KONTAK</h3>
-          </div>
+          <a
+            href="https://wa.me/6285216464519"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block mb-10"
+          >
+            <div className="bg-[#5F3826] p-3 rounded-lg shadow-lg tracking-wider hover:bg-[#744734] transition-all">
+              <h3 className="text-2xl text-center">NO KONTAK</h3>
+            </div>
+          </a>
 
           {/* SOSIAL MEDIA Section */}
-          <div className="bg-[#5F3826] p-3 rounded-lg shadow-lg tracking-wider">
-            <h3 className="text-2xl text-center">SOSIAL MEDIA</h3>
+          <a
+            href="https://www.instagram.com/330kopi/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="bg-[#5F3826] p-3 rounded-lg shadow-lg tracking-wider hover:bg-[#744734] transition-all">
+              <h3 className="text-2xl text-center">SOSIAL MEDIA</h3>
             </div>
-          </div>
+          </a>
           </div>
           </div>
        </div>

@@ -1,30 +1,89 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
+import 'swiper/css/navigation';
+import React, { useRef } from 'react';
+import { Navigation } from 'swiper/modules';
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
-import potret1 from '../../assets/maps.png';
-import potret2 from '../../assets/hero.png';
-import potret3 from '../../assets/ilusi.png';
-import potret4 from '../../assets/history.png'; // opsional
+const GaleriSlider = () => {
+  const prevRef = useRef(null);
+  const nextRef = useRef(null);
 
-export default function GaleriSlider() {
+  const slides = [
+    '/assets/slide/Picture1.jpg',
+    '/assets/slide/Picture2.jpg',
+    '/assets/slide/Picture3.jpeg',
+    '/assets/slide/Picture4.jpeg',
+    '/assets/slide/Picture5.jpeg',
+    '/assets/slide/Picture6.jpeg',
+    '/assets/slide/Picture7.jpeg',
+    '/assets/slide/Picture8.jpeg',
+    '/assets/slide/Picture9.jpeg',
+  ];
+
   return (
-    <div className="bg-[#D0935B] border-2 border-[#87CEFA] rounded-xl p-6 mt-12">
-      <h2 className="text-2xl font-bold text-center text-white mb-6">POTRET 3:30 KOPI</h2>
-      <Swiper
-        spaceBetween={20}
-        slidesPerView={1}
-        breakpoints={{
-          640: { slidesPerView: 1 },
-          768: { slidesPerView: 2 },
-          1024: { slidesPerView: 3 },
-        }}
-      >
-        {[potret1, potret2, potret3, potret4].map((img, i) => (
-          <SwiperSlide key={i}>
-            <img src={img} alt={`Potret ${i + 1}`} className="rounded-lg w-full h-auto" />
-          </SwiperSlide>
-        ))}
-      </Swiper>
+    <div className="w-full px-4 py-12 bg-[#C59464] relative">
+      <h2 className="text-4xl text-white text-center mb-8 tracking-wide"
+      style={{ fontFamily: 'Want Coffee' }}>POTRET 3:30 KOPI</h2>
+
+      <div className="relative max-w-6xl mx-auto">
+        {/* Swiper */}
+        <Swiper
+          modules={[Navigation]}
+          navigation={{
+            prevEl: prevRef.current,
+            nextEl: nextRef.current,
+          }}
+          onInit={(swiper) => {
+            swiper.params.navigation.prevEl = prevRef.current;
+            swiper.params.navigation.nextEl = nextRef.current;
+            swiper.navigation.init();
+            swiper.navigation.update();
+          }}
+          loop={true}
+          spaceBetween={20}
+          slidesPerView={1}
+          breakpoints={{
+            640: { slidesPerView: 1 },
+            768: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 },
+          }}
+        >
+          {slides.map((src, index) => (
+            <SwiperSlide key={index}>
+              <img
+                src={src}
+                alt={`Slide ${index + 1}`}
+                className="w-full h-64 object-cover rounded-xl shadow-lg"
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+
+        {/* Tombol Kiri */}
+        <button
+          ref={prevRef}
+          className="absolute top-1/2 -translate-y-1/2 -left-4 z-10 
+                    bg-[#5F3826] text-white w-10 h-10 
+                    flex items-center justify-center rounded-full 
+                    shadow-md hover:bg-[#8B5E3C] transition"
+        >
+          <FaChevronLeft size={18} />
+        </button>
+
+        {/* Tombol kanan */}
+        <button
+          ref={nextRef}
+          className="absolute top-1/2 -translate-y-1/2 -right-4 z-10 
+                    bg-[#5F3826] text-white w-10 h-10 
+                    flex items-center justify-center rounded-full 
+                    shadow-md hover:bg-[#8B5E3C] transition"
+        >
+          <FaChevronRight size={18} />
+        </button>
+      </div>
     </div>
   );
-}
+};
+
+export default GaleriSlider;
