@@ -50,17 +50,16 @@ const Kontak = () => {
       className="bg-[#5F3826] w-[200px] h-[200px] rounded-xl flex items-center justify-center"
     >
       <a href={item.href} target="_blank" rel="noopener noreferrer">
-        <div className="w-24 h-24">
-          <img
-            src={item.img}
-            alt={item.alt}
-            className="w-full h-full object-contain hover:scale-110 transition duration-300"
-          />
-        </div>
+        <img
+          src={item.img}
+          alt={item.alt}
+          className="w-[120px] h-[120px] object-contain hover:scale-110 transition duration-300"
+        />
       </a>
     </div>
   ))}
 </section>
+
 
       </main>
     </div>
