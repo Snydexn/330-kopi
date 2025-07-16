@@ -12,6 +12,7 @@ import MenuNonKopi from './pages/Menu/MenuNonKopi';
 import MenuMakanan from './pages/Menu/MenuMakanan';
 import Informasi from './pages/Informasi';
 import Testimoni from './pages/Testimoni';
+import Kontak from './pages/Kontak';
 
 
 
@@ -63,6 +64,13 @@ function App() {
            <Route path="/testimoni" element={
           <>
           <Testimoni />
+          
+          </>
+          } />
+
+          <Route path="/kontak" element={
+          <>
+          <Kontak />
           
           </>
           } />

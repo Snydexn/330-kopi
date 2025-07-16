@@ -25,19 +25,25 @@ const History = () => {
       </div>
 
         {/* Contact and Other Links */}
-      <div className="bg-[#C59464] p-0 min-h-screen">
+      <div className="bg-[#C59464] p-0 ">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-8">
-        {/* Left Section - MAPS Image */}
-          <div className="w-full p-2">
-            <img
-              src="/assets/maps.png"
-              alt="3:30 Kopi Location"
-              className="w-full h-auto rounded-lg"
-            />
-          </div> 
-        
+        {/* Left Section - MAPS Embedded */}
+      <div className="w-full p-2">
+        <iframe
+          title="Lokasi 330 KOPI"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.194053211735!2d106.71432557462772!3d-6.23813499375012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fb5b00a4a229%3A0xab258576934cc15f!2s330%20KOPI!5e0!3m2!1sen!2sid!4v1752663945134!5m2!1sen!2sid"
+          width="100%"
+          height="350"
+          style={{ border: 0 }}
+          allowFullScreen=""
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          className="rounded-lg shadow-lg w-full h-[350px]"
+        ></iframe>
+      </div>
+
          {/* Right Section - ALAMAT, SOSIAL MEDIA */}
-        <div className="space-y-10 p-5 text-white" style={{ fontFamily: 'Kenyan Coffee' }}>
+        <div className="space-y-10 p-15  text-white" style={{ fontFamily: 'Kenyan Coffee' }}>
           {/* ALAMAT Section */}
           <a
           href='https://maps.app.goo.gl/z9gKqXNMZkJVEBjp6'
