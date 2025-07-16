@@ -20,46 +20,46 @@ const Kontak = () => {
             silakan akses bagian kontak yang ada di bawah, ya. Kami siap membantu menjawab pertanyaanmu
             dan senang bisa terhubung langsung dengan kamu.
           </p>
-        </section>
+        
 
        <section className="mt-10 flex flex-wrap justify-center gap-6">
-  {[
-    {
-      href: 'tel:+6285216464519',
-      img: '/assets/kontak/telepon 1.png',
-      alt: 'Telepon',
-    },
-    {
-      href: 'https://wa.me/6285216464519',
-      img: '/assets/kontak/whatsapp 1.png',
-      alt: 'WhatsApp',
-    },
-    {
-      href: 'https://instagram.com/330kopi',
-      img: '/assets/kontak/instagram 1.png',
-      alt: 'Instagram',
-    },
-    {
-      href: 'https://www.facebook.com/p/330kopi-100058869713184',
-      img: '/assets/kontak/facebook 1.png',
-      alt: 'Facebook',
-    },
-  ].map((item, index) => (
-    <div
-      key={index}
-      className="bg-[#5F3826] w-[200px] h-[200px] rounded-xl flex items-center justify-center"
-    >
-      <a href={item.href} target="_blank" rel="noopener noreferrer">
-        <img
-          src={item.img}
-          alt={item.alt}
-          className="w-[120px] h-[120px] object-contain hover:scale-110 transition duration-300"
-        />
-      </a>
-    </div>
-  ))}
-</section>
-
+      {[
+        {
+          href: 'tel:+6285216464519',
+          img: '/assets/kontak/telepon 1.png',
+          alt: 'Telepon',
+        },
+        {
+          href: 'https://wa.me/6285216464519',
+          img: '/assets/kontak/whatsapp 1.png',
+          alt: 'WhatsApp',
+        },
+        {
+          href: 'https://instagram.com/330kopi',
+          img: '/assets/kontak/instagram 1.png',
+          alt: 'Instagram',
+        },
+        {
+          href: 'https://www.facebook.com/p/330kopi-100058869713184',
+          img: '/assets/kontak/facebook 1.png',
+          alt: 'Facebook',
+        },
+      ].map((item, index) => (
+        <div
+          key={index}
+          className="bg-[#5F3826] w-[200px] h-[200px] rounded-xl flex items-center justify-center"
+        >
+          <a href={item.href} target="_blank" rel="noopener noreferrer">
+            <img
+              src={item.img}
+              alt={item.alt}
+              className="w-[120px] h-[120px] object-contain hover:scale-110 transition duration-300"
+            />
+          </a>
+        </div>
+      ))}
+    </section>
+    </section>
 
       </main>
     </div>
