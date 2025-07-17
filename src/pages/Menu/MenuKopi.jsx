@@ -67,7 +67,7 @@ const menus = [
 const MenuKopi = () => {
   return (
     <div
-      className="min-h-screen px-4 py-12 bg-cover bg-center bg-no-repeat"
+      className="min-h-screen px-4 py-12 bg-cover bg-center bg-no-repeat animate__animated animate__fadeInUp"
       style={{ fontFamily: 'Louis George Cafe', backgroundColor: '#E7DBCC' }}
     >
       {/* Judul KOPI */}

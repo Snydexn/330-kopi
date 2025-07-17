@@ -3,7 +3,7 @@ import Navigationbar from "../../components/Navigationbar";
 
 export default function Tentang() {
   return (
-    <div className="bg-[#E7DBCC] min-h-screen text-[#4D2B1F]"> 
+    <div className="bg-[#E7DBCC] min-h-screen text-[#4D2B1F] animate__animated animate__fadeInUp"> 
       <div className="py-10 px-6 mx-auto">
         <h1 className="text-4xl text-center mb-10 font-['Want_Coffee'] bg-[#5F3826] text-white py-12 rounded-lg">TENTANG KAMI</h1>
 

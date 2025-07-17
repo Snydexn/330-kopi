@@ -4,7 +4,7 @@ import React from 'react';
 const HeroSection = () => {
   return (
     <section className="relative bg-[#f4e1d2] mt-15"> 
-      <div>
+      <div className='animate__animated animate__fadeInUp animate__delay-2s'>
         <div className="relative w-full flex justify-center z-0">
           <img 
             src="/assets/hero.png" 
