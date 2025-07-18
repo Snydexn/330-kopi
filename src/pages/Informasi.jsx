@@ -50,7 +50,7 @@ const events = [
 
 const Informasi = () => {
   return (
-    <div className="min-h-screen px-4 py-8 bg-[#E7DBCC]" style={{ fontFamily: 'Louis George Cafe' }}>
+    <div className="min-h-screen px-4 py-8 bg-[#E7DBCC]" data-aos="fade-up" data-aos-duration="1000" style={{ fontFamily: 'Louis George Cafe' }}>
       {/* PROMO */}
       <div className="bg-[#C59464] rounded-xl shadow-lg p-6 max-w-6xl mx-auto mb-12">
         <div className="text-center mb-6 text-4xl text-white">
@@ -71,7 +71,7 @@ const Informasi = () => {
       </div>
 
       {/* EVENT */}
-      <div className="bg-[#C59464] rounded-xl shadow-lg p-6 max-w-6xl mx-auto">
+      <div className="bg-[#C59464] rounded-xl shadow-lg p-6 max-w-6xl mx-auto" data-aos="fade-up" data-aos-duration="1000">
         <div className="text-center mb-6 text-4xl text-white">
           <h2 style={{ fontFamily: 'Want Coffee' }}>EVENT</h2>
         </div>

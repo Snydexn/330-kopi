@@ -1,18 +1,39 @@
 import Navigationbar from "../../components/Navigationbar";
 
-
 export default function Tentang() {
   return (
-    <div className="bg-[#E7DBCC] min-h-screen text-[#4D2B1F] animate__animated animate__fadeInUp"> 
-      <div className="py-10 px-6 mx-auto">
-        <h1 className="text-4xl text-center mb-10 font-['Want_Coffee'] bg-[#5F3826] text-white py-12 rounded-lg">TENTANG KAMI</h1>
+    <div className="relative bg-[#E7DBCC] min-h-screen text-[#4D2B1F] animate__animated animate__fadeInUp overflow-hidden">
+      {/* Background Ornamen */}
+      <img
+        src="/assets/bg/Kiri_Tentang.png"
+        alt="Ornamen Kiri"
+        className="absolute top-0 left-0 max-h-screen w-auto opacity-30 pointer-events-none z-0 object-contain"
+      />
+
+      {/* Ornamen kanan */}
+      <img
+        src="/assets/bg/Kanan_Tentang.png"
+        alt="Ornamen Kanan"
+        className="absolute bottom-0 right-0 max-h-screen w-auto opacity-30 pointer-events-none z-0 object-contain"
+      />
+
+      {/* Konten utama */}
+      <div className="relative z-10 py-10 px-4 sm:px-6 md:px-8 max-w-7xl mx-auto">
+        <h1 className="text-3xl md:text-4xl text-center mb-10 font-['Want_Coffee'] bg-[#5F3826] text-white py-6 md:py-12 rounded-lg">
+          TENTANG KAMI
+        </h1>
 
         {/* Profile Section */}
-        <div className="grid md:grid-cols-2 items-start">
-          <img src="/assets/profile.png" alt="Profil 330 Kopi" className="rounded-lg max-w-[90%] h-auto" />
-          <div className="bg-[#C59464] text-white p-7 rounded-lg shadow-lg">
-            <h2 className="text-4xl text-center mb-3 font-['Want_Coffee']">PROFILE</h2>
-            <p className="text-2xl leading-relaxed font-['Louis_George_Cafe']">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
+          <img 
+            src="/assets/profile.png" 
+            alt="Profil 330 Kopi" 
+            className="w-full max-w-full h-auto rounded-lg"
+          />
+
+          <div className="bg-[#C59464] text-white p-5 md:p-7 rounded-lg shadow-lg">
+            <h2 className="text-3xl md:text-4xl text-center mb-3 font-['Want_Coffee']">PROFILE</h2>
+            <p className="text-lg md:text-2xl leading-relaxed font-['Louis_George_Cafe']">
               3:30 Kopi adalah coffeeshop lokal yang mengusung konsep industrial pada area indoor dan taman minimalis di area outdoor.
               Desain ruangannya memadukan material seperti besi, baja, kayu, serta beton dengan tampilan alami dan tekstur kasar,
               menghadirkan kesan autentik, tegas, dan modern. Penyeduhan kopi dilakukan manual atau dengan mesin untuk rasa yang lebih autentik.
@@ -20,23 +41,23 @@ export default function Tentang() {
           </div>
         </div>
 
-        <div className="mt-6 bg-[#5C3A26] p-6 rounded-xl">
-          {/* Frame biru di dalam background coklat */}
+        {/* Visi & Misi */}
+        <div className="mt-10 bg-[#5C3A26] p-4 md:p-6 rounded-xl" data-aos="fade-up" data-aos-duration="1000">
           <div className="border-2 rounded-lg overflow-hidden">
-            <div className="grid md:grid-cols-2 gap-0 bg-[#C59464] text-white">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 bg-[#C59464] text-white">
               {/* VISI */}
-              <div className="p-6">
-                <h2 className="text-4xl mb-3 text-center text-white font-['Want_Coffee']">VISI</h2>
-                <p className="text-2xl font-['Louis_George_Cafe']">
+              <div className="p-4 md:p-6">
+                <h2 className="text-3xl md:text-4xl mb-3 text-center font-['Want_Coffee']">VISI</h2>
+                <p className="text-lg md:text-2xl font-['Louis_George_Cafe'] leading-relaxed">
                   Menjadikan 3:30 Kopi sebagai tempat dan rasa untuk dikenang bagi pelanggan dengan memberikan pelayanan terbaik,
                   produk berkualitas tinggi, tempat dan suasana yang nyaman.
                 </p>
               </div>
 
               {/* MISI */}
-              <div className="p-6">
-                <h2 className="text-4xl mb-3 text-center text-white font-['Want_Coffee']">MISI</h2>
-                <p className="text-2xl font-['Louis_George_Cafe']">
+              <div className="p-4 md:p-6">
+                <h2 className="text-3xl md:text-4xl mb-3 text-center font-['Want_Coffee']">MISI</h2>
+                <p className="text-lg md:text-2xl font-['Louis_George_Cafe'] leading-relaxed">
                   a) Memastikan bahwa makanan dan minuman yang fresh, higienis, lezat dan bervariasi dengan harga standar dan dapat dijangkau oleh semua kalangan. <br />
                   b) Menciptakan lingkungan yang ramah, menerima berbagai komunitas dan mendukung praktik bisnis yang berkelanjutan.
                 </p>

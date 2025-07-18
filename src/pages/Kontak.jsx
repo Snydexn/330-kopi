@@ -2,7 +2,7 @@ import React from 'react';
 
 const Kontak = () => {
   return (
-    <div className="bg-[#E7DBCC] min-h-screen flex flex-col justify-between font-['Louis_George_Cafe']">
+    <div className="bg-[#E7DBCC] min-h-screen flex flex-col justify-between font-['Louis_George_Cafe'] animate__animated animate__fadeInUp">
       <main className="container mx-auto p-6">
         {/* Judul */}
         <section className="text-center">
@@ -22,43 +22,51 @@ const Kontak = () => {
           </p>
         
 
-       <section className="mt-10 flex flex-wrap justify-center gap-6">
-      {[
-        {
-          href: 'tel:+6285216464519',
-          img: '/assets/kontak/telepon 1.png',
-          alt: 'Telepon',
-        },
-        {
-          href: 'https://wa.me/6285216464519',
-          img: '/assets/kontak/whatsapp 1.png',
-          alt: 'WhatsApp',
-        },
-        {
-          href: 'https://instagram.com/330kopi',
-          img: '/assets/kontak/instagram 1.png',
-          alt: 'Instagram',
-        },
-        {
-          href: 'https://www.facebook.com/p/330kopi-100058869713184',
-          img: '/assets/kontak/facebook 1.png',
-          alt: 'Facebook',
-        },
-      ].map((item, index) => (
-        <div
-          key={index}
-          className="bg-[#5F3826] w-[200px] h-[200px] rounded-xl flex items-center justify-center"
+       <section className="mt-10 overflow-x-auto">
+  <div className="flex gap-4 justify-center md:justify-center w-max mx-auto px-2">
+    {[
+      {
+        href: 'tel:+6285216464519',
+        img: '/assets/kontak/telepon 1.png',
+        alt: 'Telepon',
+      },
+      {
+        href: 'https://wa.me/6285216464519',
+        img: '/assets/kontak/whatsapp 1.png',
+        alt: 'WhatsApp',
+      },
+      {
+        href: 'https://instagram.com/330kopi',
+        img: '/assets/kontak/instagram 1.png',
+        alt: 'Instagram',
+      },
+      {
+        href: 'https://www.facebook.com/p/330kopi-100058869713184',
+        img: '/assets/kontak/facebook 1.png',
+        alt: 'Facebook',
+      },
+    ].map((item, index) => (
+      <div
+        key={index}
+        className="bg-[#5F3826] w-[60px] h-[60px] md:w-[100px] md:h-[100px] rounded-xl flex items-center justify-center flex-shrink-0"
+      >
+        <a
+          href={item.href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-[30px] h-[30px] md:w-[60px] md:h-[60px] flex items-center justify-center"
         >
-          <a href={item.href} target="_blank" rel="noopener noreferrer">
-            <img
-              src={item.img}
-              alt={item.alt}
-              className="w-[120px] h-[120px] object-contain hover:scale-110 transition duration-300"
-            />
-          </a>
-        </div>
-      ))}
-    </section>
+          <img
+            src={item.img}
+            alt={item.alt}
+            className="w-full h-full object-contain hover:scale-110 transition duration-300"
+          />
+        </a>
+      </div>
+    ))}
+  </div>
+</section>
+
     </section>
 
       </main>

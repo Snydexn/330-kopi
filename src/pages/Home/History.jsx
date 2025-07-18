@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const History = () => {
   return (
     <div className="bg-[#5F3826] p-0 rounded-lg shadow-lg">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-8" data-aos="fade-up" data-aos-duration="1000">
         {/* Left Section */}
         <div className="text-center md:text-left">
           <h2 className="text-4xl text-white mb-4 p-3 text-center" style={{ fontFamily: 'Want Coffee' }}>SEJARAH 3:30 Kopi</h2>

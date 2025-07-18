@@ -67,7 +67,7 @@ const menus = [
 const MenuKopi = () => {
   return (
     <div
-      className="min-h-screen px-4 py-12 bg-cover bg-center bg-no-repeat animate__animated animate__fadeInUp"
+      className="min-h-screen px-4 py-12 bg-cover bg-center bg-no-repeat"
       style={{ fontFamily: 'Louis George Cafe', backgroundColor: '#E7DBCC' }}
     >
       {/* Judul KOPI */}
@@ -81,7 +81,8 @@ const MenuKopi = () => {
       </div>
 
       {/* Grid Menu */}
-      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 max-w-7xl mx-auto px-2">
+      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 max-w-7xl mx-auto px-2"
+      data-aos="fade-up" data-aos-duration="1000">
         {menus.map((item, index) => (
           <div
             key={index}

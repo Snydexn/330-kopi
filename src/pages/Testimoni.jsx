@@ -90,7 +90,9 @@ const testimonies = [
 
 const Testimoni = () => {
   return (
-    <div className="min-h-screen py-10 px-4 md:px-12" style={{ fontFamily: 'Louis George Cafe' }}>
+    <div className="min-h-screen py-10 px-4 md:px-12" 
+    data-aos="fade-up" data-aos-duration="1000"
+    style={{ fontFamily: 'Louis George Cafe' }}>
       
       <div className="bg-[#5F3826] rounded-xl p-6 md:p-10">
         <h2
@@ -99,7 +101,7 @@ const Testimoni = () => {
       >
         TESTIMONI
       </h2>
-        <div className="grid gap-6 md:grid-cols-2">
+        <div className="grid gap-6 md:grid-cols-2 animate__animated animate__fadeInUp delay-1s">
           {testimonies.map((item, index) => (
             <div
               key={index}

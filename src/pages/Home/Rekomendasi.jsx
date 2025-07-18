@@ -42,7 +42,8 @@ const Rekomendasi = () => {
         Rekomendasi Barista
       </h1>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-15 justify-items-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-15 justify-items-center"
+      data-aos="fade-up" data-aos-duration="1000">
         {menu.map((item, index) => (
           <div
             key={index}
