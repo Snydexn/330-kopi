@@ -5,14 +5,11 @@ import Infopromo from './pages/Home/Infopromo';
 import Rekomendasi from './pages/Home/Rekomendasi';
 import History from './pages/Home/History';
 import Navigationbar from './components/Navigationbar';
-import Footer from './components/Footer';
 import GaleriSlider from './pages/Tentang/GaleriSlider';
-import MenuKopi from './pages/Menu/MenuKopi';
-import MenuNonKopi from './pages/Menu/MenuNonKopi';
-import MenuMakanan from './pages/Menu/MenuMakanan';
 import Informasi from './pages/Informasi';
 import Testimoni from './pages/Testimoni';
 import Kontak from './pages/Kontak';
+import HalamanMenu from './pages/Menu/HalamanMenu';
 
 
 
@@ -47,9 +44,7 @@ function App() {
 
           <Route path="/menu" element={
           <>
-          <MenuKopi />
-          <MenuNonKopi />
-          <MenuMakanan />
+          <HalamanMenu />
           
           </>
           } />
@@ -77,7 +72,6 @@ function App() {
 
 
       </Routes>
-      <Footer />
     </>
   );
 }

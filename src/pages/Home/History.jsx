@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import Footer from '../../components/Footer';
 
 const History = () => {
   return (
@@ -78,6 +79,7 @@ const History = () => {
           </a>
           </div>
           </div>
+          <Footer />
        </div>
     </div>
 

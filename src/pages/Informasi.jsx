@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Footer from '../components/Footer';
 const promos = [
   {
     image: '/assets/promo/promo 1.png',
@@ -50,47 +50,63 @@ const events = [
 
 const Informasi = () => {
   return (
-    <div className="min-h-screen px-4 py-8 bg-[#E7DBCC]" data-aos="fade-up" data-aos-duration="1000" style={{ fontFamily: 'Louis George Cafe' }}>
-      {/* PROMO */}
-      <div className="bg-[#C59464] rounded-xl shadow-lg p-6 max-w-6xl mx-auto mb-12">
-        <div className="text-center mb-6 text-4xl text-white">
-          <h2 style={{ fontFamily: 'Want Coffee' }}>PROMO</h2>
-        </div>
+    <div className="relative min-h-screen bg-[#E7DBCC] overflow-hidden" style={{ fontFamily: 'Louis George Cafe' }}>
+      {/* Background Ornamen */}
+      <div
+        className="absolute inset-0 z-0 pointer-events-none"
+        style={{
+          backgroundImage: `url('/assets/bg/Atas & Bawah_Informasi.png')`,
+          backgroundRepeat: 'repeat',
+          backgroundPosition: 'top left, bottom right',
+          backgroundSize: 'contain',
+          opacity: 0.35,
+        }}
+      ></div>
 
-        <div className="flex flex-wrap justify-center gap-8">
-          {promos.map((promo, index) => (
-            <div key={index} className="rounded-xl p-2 flex justify-center">
-              <img
-                src={promo.image}
-                alt={promo.alt}
-                className="w-64 h-auto rounded-lg object-cover"
-              />
-            </div>
-          ))}
-        </div>
-      </div>
+      {/* Konten utama */}
+      <div className="relative z-10 px-4 py-8" data-aos="fade-up" data-aos-duration="1000">
+        {/* PROMO */}
+        <div className="bg-[#C59464] rounded-xl shadow-lg p-6 max-w-6xl mx-auto mb-12">
+          <div className="text-center mb-6 text-4xl text-white">
+            <h2 style={{ fontFamily: 'Want Coffee' }}>PROMO</h2>
+          </div>
 
-      {/* EVENT */}
-      <div className="bg-[#C59464] rounded-xl shadow-lg p-6 max-w-6xl mx-auto" data-aos="fade-up" data-aos-duration="1000">
-        <div className="text-center mb-6 text-4xl text-white">
-          <h2 style={{ fontFamily: 'Want Coffee' }}>EVENT</h2>
-        </div>
-
-        <div className="flex flex-col gap-8">
-          {events.map((event, index) => (
-            <div key={index} className="flex flex-col md:flex-row gap-4">
-              <img
-                src={event.image}
-                alt={event.alt}
-                className="w-full md:w-64 h-auto rounded-lg object-cover"
-              />
-              <div className="bg-[#5F3826] text-white p-12 rounded-xl text-lg flex-1">
-                {event.description}
+          <div className="flex flex-wrap justify-center gap-8">
+            {promos.map((promo, index) => (
+              <div key={index} className="rounded-xl p-2 flex justify-center">
+                <img
+                  src={promo.image}
+                  alt={promo.alt}
+                  className="w-64 h-auto rounded-lg object-cover"
+                />
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
+        </div>
+
+        {/* EVENT */}
+        <div className="bg-[#C59464] rounded-xl shadow-lg p-6 max-w-6xl mx-auto">
+          <div className="text-center mb-6 text-4xl text-white">
+            <h2 style={{ fontFamily: 'Want Coffee' }}>EVENT</h2>
+          </div>
+
+          <div className="flex flex-col gap-8">
+            {events.map((event, index) => (
+              <div key={index} className="flex flex-col md:flex-row gap-4">
+                <img
+                  src={event.image}
+                  alt={event.alt}
+                  className="w-full md:w-64 h-auto rounded-lg object-cover"
+                />
+                <div className="bg-[#5F3826] text-white p-12 rounded-xl text-lg flex-1">
+                  {event.description}
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

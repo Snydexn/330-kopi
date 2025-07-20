@@ -66,13 +66,13 @@ const menus = [
 const MenuNonKopi = () => {
   return (
     <div
-      className="min-h-screen px-4 py-12 bg-cover bg-center bg-no-repeat"
-      style={{ fontFamily: 'Louis George Cafe', backgroundColor: '#E7DBCC' }}
+      className="relative px-4 py-12 max-w-7xl mx-auto"
+      style={{ fontFamily: 'Louis George Cafe'}}
     >
       {/* Judul */}
       <div className="text-center mb-6">
         <h2
-          className="bg-[#5F3826] text-white text-2xl rounded-lg tracking-wide px-30 py-2 inline-block max-w-full"
+          className="bg-[#5F3826] text-white text-2xl rounded-lg tracking-wide px-10 py-2"
           style={{ fontFamily: 'Want Coffee' }}
         >
           NON KOPI
@@ -80,7 +80,7 @@ const MenuNonKopi = () => {
       </div>
 
       {/* Grid Menu */}
-      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-10 gap-y-20 max-w-7xl mx-auto px-5 mt-20"
+      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-10 gap-y-20 max-w-7xl mx-auto px-5 mt-30"
       data-aos="fade-up" data-aos-duration="1000"
       >
         {menus.map((item, index) => (

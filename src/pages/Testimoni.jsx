@@ -1,5 +1,6 @@
 // pages/Testimoni.jsx
 import React from 'react';
+import Footer from '../components/Footer';
 
 const testimonies = [
   {
@@ -90,17 +91,31 @@ const testimonies = [
 
 const Testimoni = () => {
   return (
-    <div className="min-h-screen py-10 px-4 md:px-12" 
-    data-aos="fade-up" data-aos-duration="1000"
-    style={{ fontFamily: 'Louis George Cafe' }}>
-      
-      <div className="bg-[#5F3826] rounded-xl p-6 md:p-10">
+    <div className="relative min-h-screen py-10 px-4 md:px-12 overflow-hidden bg-[#E7DBCC]" 
+      data-aos="fade-up" 
+      data-aos-duration="1000"
+      style={{ fontFamily: 'Louis George Cafe' }}
+    >
+      {/* Background Kiri dan Kanan */}
+      <img 
+        src="/assets/bg/Kiri_Testi.png" 
+        alt="Ornamen Kiri" 
+        className="hidden md:block absolute top-0 left-0 h-full w-auto opacity-55 pointer-events-none z-0"
+      />
+      <img 
+        src="/assets/bg/Kanan_Testi.png" 
+        alt="Ornamen Kanan" 
+        className="hidden md:block absolute top-0 right-0 h-full w-auto opacity-55 pointer-events-none z-0"
+      />
+
+      {/* Konten utama */}
+      <div className="relative z-10 bg-[#5F3826] rounded-xl p-6 md:p-10 shadow-lg">
         <h2
-        className="text-center text-white text-5xl mb-8"
-        style={{ fontFamily: 'Want Coffee' }}
-      >
-        TESTIMONI
-      </h2>
+          className="text-center text-white text-5xl mb-8"
+          style={{ fontFamily: 'Want Coffee' }}
+        >
+          TESTIMONI
+        </h2>
         <div className="grid gap-6 md:grid-cols-2 animate__animated animate__fadeInUp delay-1s">
           {testimonies.map((item, index) => (
             <div
@@ -127,6 +142,7 @@ const Testimoni = () => {
           ))}
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
