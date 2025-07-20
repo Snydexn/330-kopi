@@ -31,7 +31,7 @@ export default function Tentang() {
             className="w-full max-w-full h-auto rounded-lg"
           />
 
-          <div className="bg-[#C59464] text-white p-5 md:p-7 rounded-lg shadow-lg">
+          <div className="bg-[#C59464] text-white p-5 md:p-15 rounded-lg shadow-lg">
             <h2 className="text-3xl md:text-4xl text-center mb-3 font-['Want_Coffee']">PROFILE</h2>
             <p className="text-lg md:text-2xl leading-relaxed font-['Louis_George_Cafe']">
               3:30 Kopi adalah coffeeshop lokal yang mengusung konsep industrial pada area indoor dan taman minimalis di area outdoor.
