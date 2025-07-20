@@ -91,32 +91,37 @@ const testimonies = [
 
 const Testimoni = () => {
   return (
-    <div className="relative min-h-screen py-10 px-4 md:px-12 overflow-hidden bg-[#E7DBCC]" 
-      data-aos="fade-up" 
+    <div
+      className="relative min-h-screen py-10 px-4 md:px-12 overflow-hidden bg-[#E7DBCC]"
+      data-aos="fade-up"
       data-aos-duration="1000"
       style={{ fontFamily: 'Louis George Cafe' }}
     >
-      {/* Background Kiri dan Kanan */}
-      <img 
-        src="/assets/bg/Kiri_Testi.png" 
-        alt="Ornamen Kiri" 
-        className="hidden md:block absolute top-0 left-0 h-full w-auto opacity-55 pointer-events-none z-0"
-      />
-      <img 
-        src="/assets/bg/Kanan_Testi.png" 
-        alt="Ornamen Kanan" 
-        className="hidden md:block absolute top-0 right-0 h-full w-auto opacity-55 pointer-events-none z-0"
-      />
+      {/* Ornamen Kiri */}
+    <img
+  src="/assets/bg/Kiri_Testi.png"
+  alt="Ornamen Kiri"
+  className="hidden md:block absolute left-[-200px] top-0 bottom-0 my-auto w-auto h-[180vh] object-contain opacity-30 pointer-events-none z-0"
+/>
 
-      {/* Konten utama */}
-      <div className="relative z-10 bg-[#5F3826] rounded-xl p-6 md:p-10 shadow-lg">
+ <img
+  src="/assets/bg/Kanan_Testi.png"
+  alt="Ornamen Kanan"
+  className="hidden md:block absolute right-[-200px] top-0 bottom-0 my-auto w-auto h-[180vh] object-contain opacity-30 pointer-events-none z-0"
+/>
+
+
+
+      {/* Konten Utama */}
+      <div className="relative z-10 bg-[#5F3826] rounded-xl px-6 py-10 md:px-14 md:py-12 shadow-lg max-w-7xl mx-auto">
         <h2
           className="text-center text-white text-5xl mb-8"
           style={{ fontFamily: 'Want Coffee' }}
         >
           TESTIMONI
         </h2>
-        <div className="grid gap-6 md:grid-cols-2 animate__animated animate__fadeInUp delay-1s">
+
+        <div className="grid gap-6 md:grid-cols-2">
           {testimonies.map((item, index) => (
             <div
               key={index}
@@ -128,20 +133,19 @@ const Testimoni = () => {
                 className="w-12 h-12 rounded-full object-cover border-2 border-white"
               />
               <div>
-                <h4 className="font-bold text-white mb-1">{item.name}</h4>
+                <h4 className="font-bold mb-1">{item.name}</h4>
                 <div className="flex mb-1">
                   {[...Array(item.rating)].map((_, i) => (
                     <span key={i}>⭐</span>
                   ))}
                 </div>
-                <p className="text-base text-white leading-relaxed">
-                  {item.content}
-                </p>
+                <p className="text-base leading-relaxed">{item.content}</p>
               </div>
             </div>
           ))}
         </div>
       </div>
+
       <Footer />
     </div>
   );
