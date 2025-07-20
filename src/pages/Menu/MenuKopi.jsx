@@ -66,50 +66,72 @@ const menus = [
 
 const MenuKopi = () => {
   return (
-    <div
-      className="min-h-screen px-4 py-12 bg-cover bg-center bg-no-repeat"
-      style={{ fontFamily: 'Louis George Cafe', backgroundColor: '#E7DBCC' }}
-    >
-      {/* Judul KOPI */}
-      <div className="text-center mb-6">
-        <h2
-          className="bg-[#5F3826] text-white text-2xl rounded-lg tracking-wide px-30 py-2 inline-block max-w-full"
-          style={{ fontFamily: 'Want Coffee' }}
-        >
-          KOPI
-        </h2>
-      </div>
+    <div className="relative min-h-screen bg-[#E7DBCC] overflow-hidden">
+      {/* Ornamen Atas */}
+      <img
+        src="/assets/bg/Atas_Menu.png"
+        alt="ornamen atas"
+        className="absolute top-0 left-0 w-full max-h-[250px] object-contain z-0 pointer-events-none"
+      />
 
-      {/* Grid Menu */}
-      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 max-w-7xl mx-auto px-2"
-      data-aos="fade-up" data-aos-duration="1000">
-        {menus.map((item, index) => (
-          <div
-            key={index}
-            className="bg-[#C59464] rounded-xl shadow-lg p-4 flex flex-col text-white min-h-[330px]"
+      {/* Ornamen Bawah */}
+      <img
+        src="/assets/bg/Bawah_Menu.png"
+        alt="ornamen bawah"
+        className="absolute bottom-0 right-0 w-full max-h-[250px] object-contain z-0 pointer-events-none"
+      />
+
+      {/* Konten utama */}
+      <div
+        className="relative z-10 px-4 py-12"
+        style={{ fontFamily: 'Louis George Cafe' }}
+      >
+        {/* Judul */}
+        <div className="text-center mb-6">
+          <h2
+            className="bg-[#5F3826] text-white text-2xl rounded-lg tracking-wide px-30 py-2 inline-block max-w-full"
+            style={{ fontFamily: 'Want Coffee' }}
           >
-            <div className="flex justify-center">
-              <img
-                src={item.image}
-                alt={item.name}
-                className="w-28 h-28 object-cover rounded-full border-4 border-[#5F3826] mt-2 mb-4 shadow-md"
-              />
-            </div>
-            <h3 className="bg-[#5F3826] px-4 py-1 rounded-md text-lg mb-1 text-center">
-              {item.name}
-            </h3>
-            <p className="text-sm text-center flex-grow">{item.desc}</p>
-            <div className="flex justify-end mt-auto">
-              <div className="bg-[#5F3826] px-3 py-1 rounded-md text-sm font-semibold">
-                {item.price}
+            KOPI
+          </h2>
+        </div>
+
+        {/* Grid Menu */}
+        <div
+          className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-10 gap-y-20 max-w-7xl mx-auto px-5 mt-20"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          {menus.map((item, index) => (
+            <div
+              key={index}
+              className="bg-[#C59464] rounded-xl shadow-lg p-3 flex flex-col text-white min-h-[250px]"
+            >
+              <div className="flex justify-center relative -mt-19 z-10">
+                <img
+                  src={item.image}
+                  alt={item.name}
+                  className="w-28 h-28 object-cover rounded-full shadow-md  mt-2 mb-4 bg-white"
+                />
+              </div>
+
+              <h3 className="bg-[#5F3826] px-4 py-1 rounded-md text-lg mb-1 text-center">
+                {item.name}
+              </h3>
+              <p className="text-sm text-center flex-grow">{item.desc}</p>
+              <div className="flex justify-end mt-auto">
+                <div className="bg-[#5F3826] px-3 py-1 rounded-md text-sm font-semibold">
+                  {item.price}
+                </div>
               </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );
 };
+
 
 
 export default MenuKopi;

@@ -2,7 +2,7 @@ import Navigationbar from "../../components/Navigationbar";
 
 export default function Tentang() {
   return (
-    <div className="relative bg-[#E7DBCC] min-h-screen text-[#4D2B1F] animate__animated animate__fadeInUp overflow-hidden">
+    <div className="relative bg-[#E7DBCC] min-h-screen text-[#4D2B1F]">
       {/* Background Ornamen */}
       <img
         src="/assets/bg/Kiri_Tentang.png"
@@ -18,7 +18,7 @@ export default function Tentang() {
       />
 
       {/* Konten utama */}
-      <div className="relative z-10 py-10 px-4 sm:px-6 md:px-8 max-w-7xl mx-auto">
+      <div className="relative z-10 py-10 px-4 sm:px-6 md:px-8 max-w-7xl mx-auto animate__animated animate__fadeInUp overflow-hidden">
         <h1 className="text-3xl md:text-4xl text-center mb-10 font-['Want_Coffee'] bg-[#5F3826] text-white py-6 md:py-12 rounded-lg">
           TENTANG KAMI
         </h1>

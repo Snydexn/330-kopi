@@ -1,5 +1,7 @@
 // HeroSection.jsx
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 
 const HeroSection = () => {
   return (
@@ -13,13 +15,12 @@ const HeroSection = () => {
           />
           
           <div className="absolute bottom-8 md:bottom-16 left-1/2 transform -translate-x-1/2 text-base md:text-2xl px-4 md:px-8 py-1 md:py-2 text-white rounded-full">
-            <a 
-              href="/menu" 
+            <Link to="/menu" 
               className="bg-[#C59464] text-white px-15 py-3 text-2xl rounded-full hover:bg-[#5F3826] hover:text-white transition-all"
               style={{ fontFamily: 'Want Coffee' }}
             >
               MENU
-            </a>
+            </Link>
           </div>
         </div>
       </div>

@@ -108,20 +108,20 @@ const MenuMakanan = () => {
         </h2>
       </div>
 
-      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 max-w-7xl mx-auto px-2"
+      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-10 gap-y-20 max-w-7xl mx-auto px-5 mt-20"
       data-aos="fade-up" data-aos-duration="1000"
       >
         
         {menus.map((item, index) => (
           <div
             key={index}
-            className="bg-[#C59464] rounded-xl shadow-lg p-4 flex flex-col text-white min-h-[330px]"
+            className="bg-[#C59464] rounded-xl shadow-lg p-3 flex flex-col text-white min-h-[250px]"
           >
-            <div className="flex justify-center">
+            <div className="flex justify-center relative -mt-19 z-10">
               <img
                 src={item.image}
                 alt={item.name}
-                className="w-28 h-28 object-cover rounded-full border-4 border-[#5F3826] mt-2 mb-4 shadow-md"
+                className="w-28 h-28 object-cover rounded-full mt-2 mb-4 shadow-md"
               />
             </div>
             <h3 className="bg-[#5F3826] px-4 py-1 rounded-md text-lg mb-1 text-center">
