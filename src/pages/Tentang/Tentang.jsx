@@ -24,7 +24,7 @@ export default function Tentang() {
         </h1>
 
         {/* Profile Section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-2 items-stretch gap-6">
           <img 
             src="/assets/profile.png" 
             alt="Profil 330 Kopi" 
