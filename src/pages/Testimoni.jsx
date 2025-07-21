@@ -99,18 +99,16 @@ const Testimoni = () => {
     >
       {/* Ornamen Kiri */}
     <img
-  src="/assets/bg/Kiri_Testi.png"
-  alt="Ornamen Kiri"
-  className="hidden md:block absolute left-[-200px] top-0 bottom-0 my-auto w-auto h-[180vh] object-contain opacity-30 pointer-events-none z-0"
-/>
+      src="/assets/bg/Kiri_Testi.png"
+      alt="Ornamen Kiri"
+      className="hidden md:block absolute left-[-200px] top-0 bottom-0 my-auto w-auto h-[180vh] object-contain opacity-30 pointer-events-none z-0"
+    />
 
- <img
-  src="/assets/bg/Kanan_Testi.png"
-  alt="Ornamen Kanan"
-  className="hidden md:block absolute right-[-200px] top-0 bottom-0 my-auto w-auto h-[180vh] object-contain opacity-30 pointer-events-none z-0"
-/>
-
-
+    <img
+      src="/assets/bg/Kanan_Testi.png"
+      alt="Ornamen Kanan"
+      className="hidden md:block absolute right-[-200px] top-0 bottom-0 my-auto w-auto h-[180vh] object-contain opacity-30 pointer-events-none z-0"
+    />
 
       {/* Konten Utama */}
       <div className="relative z-10 bg-[#5F3826] rounded-xl px-6 py-10 md:px-14 md:py-12 shadow-lg max-w-7xl mx-auto">

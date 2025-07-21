@@ -4,7 +4,6 @@ import 'swiper/css/navigation';
 import React, { useRef, useState, useEffect } from 'react';
 import { Navigation } from 'swiper/modules';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
-import Footer from '../../components/Footer';
 
 const GaleriSlider = () => {
   const prevRef = useRef(null);
@@ -93,7 +92,6 @@ const GaleriSlider = () => {
           </Swiper>
         )}
       </div>
-      <Footer />
     </div>
   );
 };

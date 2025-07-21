@@ -5,7 +5,6 @@ import Infopromo from './pages/Home/Infopromo';
 import Rekomendasi from './pages/Home/Rekomendasi';
 import History from './pages/Home/History';
 import Navigationbar from './components/Navigationbar';
-import GaleriSlider from './pages/Tentang/GaleriSlider';
 import Informasi from './pages/Informasi';
 import Testimoni from './pages/Testimoni';
 import Kontak from './pages/Kontak';
@@ -37,7 +36,7 @@ function App() {
         <Route path="/tentang" element={
           <>
           <Tentang />
-          <GaleriSlider />
+      
           
           </>
           } />

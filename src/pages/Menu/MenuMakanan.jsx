@@ -101,7 +101,7 @@ const MenuMakanan = () => {
     >
       <div className="text-center mb-6">
         <h2
-          className="bg-[#5F3826] text-white text-2xl rounded-lg tracking-wide px-10 py-2"
+          className="inline-block bg-[#5F3826] text-white text-2xl rounded-lg tracking-wide px-32 py-2"
           style={{ fontFamily: 'Want Coffee' }}
         >
           MAKANAN

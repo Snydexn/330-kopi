@@ -1,4 +1,6 @@
+import Footer from "../../components/Footer";
 import Navigationbar from "../../components/Navigationbar";
+import GaleriSlider from "./GaleriSlider";
 
 export default function Tentang() {
   return (
@@ -7,15 +9,34 @@ export default function Tentang() {
       <img
         src="/assets/bg/Kiri_Tentang.png"
         alt="Ornamen Kiri"
-        className="absolute top-0 left-0 max-h-screen w-auto opacity-30 pointer-events-none z-0 object-contain"
+        className="absolute top-10 left-[-120px] h-[170vh] w-auto opacity-30 pointer-events-none z-0 object-contain"
       />
 
       {/* Ornamen kanan */}
       <img
         src="/assets/bg/Kanan_Tentang.png"
         alt="Ornamen Kanan"
-        className="absolute bottom-0 right-0 max-h-screen w-auto opacity-30 pointer-events-none z-0 object-contain"
+        className="absolute top-10 right-[-120px] h-[170vh] w-auto opacity-30 pointer-events-none z-0 object-contain"
       />
+
+      <div className="absolute bottom-0 left-[-280px] w-[110vh] h-[300px] overflow-hidden pointer-events-none z-0">
+        <img
+          src="/assets/bg/Kiri_Tentang.png"
+          alt="Ornamen Kiri"
+          className="w-full h-auto opacity-30 object-cover"
+        />
+      </div>
+
+      <div className="absolute bottom-0 right-[-280px] w-[110vh] h-[300px] overflow-hidden pointer-events-none z-0">
+        <img
+          src="/assets/bg/Kiri_Tentang.png" 
+          alt="Ornamen Kanan"
+          className="w-full h-auto opacity-30 object-cover scale-x-[-1]"
+        />
+      </div>
+
+
+
 
       {/* Konten utama */}
       <div className="relative z-10 py-10 px-4 sm:px-6 md:px-8 max-w-7xl mx-auto animate__animated animate__fadeInUp overflow-hidden">
@@ -43,8 +64,8 @@ export default function Tentang() {
 
         {/* Visi & Misi */}
         <div className="mt-10 bg-[#5C3A26] p-4 md:p-6 rounded-xl" data-aos="fade-up" data-aos-duration="1000">
-          <div className="border-2 rounded-lg overflow-hidden">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 bg-[#C59464] text-white">
+          <div className="rounded-lg overflow-hidden">
+            <div className="grid grid-cols-1 md:grid-cols-2  bg-[#C59464] text-white">
               {/* VISI */}
               <div className="p-4 md:p-6">
                 <h2 className="text-3xl md:text-4xl mb-3 text-center font-['Want_Coffee']">VISI</h2>
@@ -65,7 +86,11 @@ export default function Tentang() {
             </div>
           </div>
         </div>
+        <div className="mt-10 mb-20 rounded-lg overflow-hidden">
+        <GaleriSlider />
+        </div>
       </div>
+      <Footer />
     </div>
   );
 }
