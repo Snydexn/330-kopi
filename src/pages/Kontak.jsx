@@ -10,13 +10,14 @@ const Kontak = () => {
       <img
         src="/assets/bg/Kiri_Kontak.png"
         alt="ornamen kiri"
-        className="absolute top-0 left-0 h-full object-contain opacity-30 z-0 pointer-events-none"
+        className="absolute left-[-30px] top-[0px] h-[120vh] w-auto object-contain opacity-30 z-0 pointer-events-none"
       />
       <img
         src="/assets/bg/Kanan_Kontak.png"
         alt="ornamen kanan"
-        className="absolute top-0 right-0 h-full object-contain opacity-30 z-0 pointer-events-none"
+        className="absolute right-[-30px] top-[0px] h-[120vh] w-auto object-contain opacity-30 z-0 pointer-events-none"
       />
+
 
       {/* Konten utama */}
       <main className="relative z-10 container mx-auto p-6 animate__animated animate__fadeInUp">
