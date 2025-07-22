@@ -20,7 +20,7 @@ export default function Tentang() {
   />
 
   {/* Ornamen Kiri Bawah */}
-  <div className="absolute bottom-0 left-[-25vw] w-[60vw] h-[30vh] overflow-hidden pointer-events-none z-0">
+  <div className="absolute bottom-0 left-[-25vw] w-[60vw] h-[40vh] overflow-hidden pointer-events-none z-0">
     <img
       src="/assets/bg/Kiri_Tentang.png"
       alt="Ornamen Kiri"
@@ -29,7 +29,7 @@ export default function Tentang() {
   </div>
 
   {/* Ornamen Kanan Bawah */}
-  <div className="absolute bottom-0 right-[-25vw] w-[60vw] h-[30vh] overflow-hidden pointer-events-none z-0">
+  <div className="absolute bottom-0 right-[-25vw] w-[60vw] h-[40vh] overflow-hidden pointer-events-none z-0">
     <img
       src="/assets/bg/Kiri_Tentang.png"
       alt="Ornamen Kanan"
