@@ -4,38 +4,38 @@ import GaleriSlider from "./GaleriSlider";
 
 export default function Tentang() {
   return (
-    <div className="relative bg-[#E7DBCC] min-h-screen text-[#4D2B1F]">
-      {/* Background Ornamen */}
-      <img
-        src="/assets/bg/Kiri_Tentang.png"
-        alt="Ornamen Kiri"
-        className="absolute top-10 left-[-120px] h-[170vh] w-auto opacity-30 pointer-events-none z-0 object-contain"
-      />
+    <div className="relative bg-[#E7DBCC] min-h-screen text-[#4D2B1F] overflow-hidden">
+  {/* Ornamen Kiri Atas */}
+  <img
+    src="/assets/bg/Kiri_Tentang.png"
+    alt="Ornamen Kiri"
+    className="absolute top-10 left-[-10vw] h-[170vh] w-auto opacity-30 pointer-events-none z-0 object-contain"
+  />
 
-      {/* Ornamen kanan */}
-      <img
-        src="/assets/bg/Kanan_Tentang.png"
-        alt="Ornamen Kanan"
-        className="absolute top-10 right-[-120px] h-[170vh] w-auto opacity-30 pointer-events-none z-0 object-contain"
-      />
+  {/* Ornamen Kanan Atas */}
+  <img
+    src="/assets/bg/Kanan_Tentang.png"
+    alt="Ornamen Kanan"
+    className="absolute top-10 right-[-10vw] h-[170vh] w-auto opacity-30 pointer-events-none z-0 object-contain"
+  />
 
-      <div className="absolute bottom-0 left-[-280px] w-[110vh] h-[300px] overflow-hidden pointer-events-none z-0">
-        <img
-          src="/assets/bg/Kiri_Tentang.png"
-          alt="Ornamen Kiri"
-          className="w-full h-auto opacity-30 object-cover"
-        />
-      </div>
+  {/* Ornamen Kiri Bawah */}
+  <div className="absolute bottom-0 left-[-25vw] w-[60vw] h-[30vh] overflow-hidden pointer-events-none z-0">
+    <img
+      src="/assets/bg/Kiri_Tentang.png"
+      alt="Ornamen Kiri"
+      className="w-full h-auto opacity-30 object-cover"
+    />
+  </div>
 
-      <div className="absolute bottom-0 right-[-280px] w-[110vh] h-[300px] overflow-hidden pointer-events-none z-0">
-        <img
-          src="/assets/bg/Kiri_Tentang.png" 
-          alt="Ornamen Kanan"
-          className="w-full h-auto opacity-30 object-cover scale-x-[-1]"
-        />
-      </div>
-
-
+  {/* Ornamen Kanan Bawah */}
+  <div className="absolute bottom-0 right-[-25vw] w-[60vw] h-[30vh] overflow-hidden pointer-events-none z-0">
+    <img
+      src="/assets/bg/Kiri_Tentang.png"
+      alt="Ornamen Kanan"
+      className="w-full h-auto opacity-30 object-cover scale-x-[-1]"
+    />
+  </div>
 
 
       {/* Konten utama */}

@@ -72,12 +72,13 @@ const MenuNonKopi = () => {
       {/* Judul */}
       <div className="text-center mb-6">
         <h2
-          className="inline-block bg-[#5F3826] text-white text-2xl rounded-lg tracking-wide px-32 py-2"
+          className="inline-block bg-[#5F3826] text-white text-base sm:text-lg md:text-xl lg:text-2xl rounded-lg tracking-wide px-20 sm:px-10 md:px-20 lg:px-32 py-2"
           style={{ fontFamily: 'Want Coffee' }}
         >
           NON KOPI
         </h2>
       </div>
+
 
       {/* Grid Menu */}
       <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-10 gap-y-20 max-w-7xl mx-auto px-5 mt-30"

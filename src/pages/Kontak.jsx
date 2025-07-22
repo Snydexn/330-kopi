@@ -7,16 +7,37 @@ const Kontak = () => {
       className="relative bg-[#E7DBCC] min-h-screen flex flex-col justify-between font-['Louis_George_Cafe'] overflow-hidden"
     >
       {/* Background Ornamen */}
-      <img
-        src="/assets/bg/Kiri_Kontak.png"
-        alt="ornamen kiri"
-        className="absolute left-[-30px] top-[0px] h-[120vh] w-auto object-contain opacity-30 z-0 pointer-events-none"
-      />
-      <img
-        src="/assets/bg/Kanan_Kontak.png"
-        alt="ornamen kanan"
-        className="absolute right-[-30px] top-[0px] h-[120vh] w-auto object-contain opacity-30 z-0 pointer-events-none"
-      />
+    {/* Ornamen Kiri */}
+<img
+  src="/assets/bg/Kiri_Kontak.png"
+  alt="ornamen kiri"
+  className="
+    absolute 
+    top-0 
+    left-[-46vw] sm:left-[-12vw] md:left-[-10vw] lg:left-[-8vw] 
+    h-[120vh] 
+    w-auto 
+    object-contain 
+    opacity-30 
+    z-0 
+    pointer-events-none"
+/>
+
+{/* Ornamen Kanan */}
+<img
+  src="/assets/bg/Kanan_Kontak.png"
+  alt="ornamen kanan"
+  className="
+    absolute 
+    top-0 
+    right-[-46vw] sm:right-[-12vw] md:right-[-10vw] lg:right-[-8vw] 
+    h-[120vh] 
+    w-auto 
+    object-contain 
+    opacity-30 
+    z-0 
+    pointer-events-none"
+/>
 
 
       {/* Konten utama */}
@@ -40,7 +61,7 @@ const Kontak = () => {
 
           {/* Icon Kontak */}
           <section className="mt-10 overflow-x-auto">
-            <div className="flex gap-4 justify-center md:justify-center w-max mx-auto px-2">
+            <div className="flex gap-4 justify-center w-max mx-auto px-2">
               {[
                 {
                   href: 'tel:+6285216464519',
@@ -65,13 +86,13 @@ const Kontak = () => {
               ].map((item, index) => (
                 <div
                   key={index}
-                  className="bg-[#5F3826] w-[60px] h-[60px] md:w-[100px] md:h-[100px] rounded-xl flex items-center justify-center flex-shrink-0"
+                  className="bg-[#5F3826] w-14 h-14 sm:w-16 sm:h-16 md:w-24 md:h-24 rounded-xl flex items-center justify-center flex-shrink-0"
                 >
                   <a
                     href={item.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-[30px] h-[30px] md:w-[60px] md:h-[60px] flex items-center justify-center"
+                    className="w-6 h-6 sm:w-8 sm:h-8 md:w-12 md:h-12 flex items-center justify-center"
                   >
                     <img
                       src={item.img}
