@@ -63,7 +63,7 @@ const History = () => {
             className="block mb-10"
           >
             <div className="bg-[#5F3826] p-3 rounded-lg shadow-lg tracking-wider hover:bg-[#744734] transition-all">
-              <h3 className="text-2xl text-center">NO KONTAK</h3>
+              <h3 className="text-2xl text-center">WHATSAPP</h3>
             </div>
           </a>
 
