@@ -97,37 +97,68 @@ const Testimoni = () => {
       data-aos-duration="1000"
       style={{ fontFamily: 'Louis George Cafe' }}
     >
-      {/* Ornamen Kiri */}
-    <img
-      src="/assets/bg/Kiri_Testi.png"
-      alt="Ornamen Kiri"
-      className="
-        hidden md:block
-        absolute 
-        top-0 bottom-0 my-auto
-        left-[-16vw] md:left-[-12vw] lg:left-[-8vw]
-        w-auto h-[180vh]
-        object-contain 
-        opacity-30 
-        pointer-events-none 
-        z-0"
-    />
+{/* Ornamen Kiri Desktop */}
+<img
+  src="/assets/bg/Kiri_Testi.png"
+  alt="Ornamen Kiri"
+  className="
+    hidden md:block
+    absolute 
+    top-0 bottom-0 my-auto
+    left-[-16vw] md:left-[-12vw] lg:left-[-8vw]
+    w-auto h-[180vh]
+    object-contain 
+    opacity-30 
+    pointer-events-none 
+    z-0"
+/>
 
-    {/* Ornamen Kanan */}
-    <img
-      src="/assets/bg/Kanan_Testi.png"
-      alt="Ornamen Kanan"
-      className="
-        hidden md:block
-        absolute 
-        top-0 bottom-0 my-auto
-        right-[-16vw] md:right-[-12vw] lg:right-[-8vw]
-        w-auto h-[180vh]
-        object-contain 
-        opacity-30 
-        pointer-events-none 
-        z-0"
-    />
+{/* Ornamen Kiri Mobile */}
+<img
+  src="/assets/bg/Kiri_Testi.png"
+  alt="Ornamen Kiri Mobile"
+  className="
+    block md:hidden
+    absolute 
+    top-0 left-0
+    w-[180vw] h-[180vh]
+    object-cover 
+    opacity-20 
+    pointer-events-none 
+    z-0"
+/>
+
+{/* Ornamen Kanan Desktop */}
+<img
+  src="/assets/bg/Kanan_Testi.png"
+  alt="Ornamen Kanan"
+  className="
+    hidden md:block
+    absolute 
+    top-0 bottom-0 my-auto
+    right-[-16vw] md:right-[-12vw] lg:right-[-8vw]
+    w-auto h-[180vh]
+    object-contain 
+    opacity-30 
+    pointer-events-none 
+    z-0"
+/>
+
+{/* Ornamen Kanan Mobile */}
+<img
+  src="/assets/bg/Kanan_Testi.png"
+  alt="Ornamen Kanan Mobile"
+  className="
+    block md:hidden
+    absolute 
+    bottom-0 right-0
+    w-[180vw] h-[180vh]
+    object-cover 
+    opacity-20 
+    pointer-events-none 
+    z-0"
+/>
+
 
 
       {/* Konten Utama */}
