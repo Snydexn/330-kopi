@@ -37,14 +37,14 @@ const Rekomendasi = () => {
       <img
         src="/assets/bg/Kiri_Home.png"
         alt="Ornamen Kiri"
-        className="hidden md:block absolute top-[-300px] left-[-25vw] h-[160vh] w-auto object-contain opacity-30 pointer-events-none z-0"
+        className="hidden md:block absolute top-[-300px] left-[-37vw] h-[160vh] w-auto object-contain opacity-30 pointer-events-none z-0"
       />
 
       {/* Ornamen Kanan untuk Desktop */}
       <img
         src="/assets/bg/Kanan_Home.png"
         alt="Ornamen Kanan"
-        className="hidden md:block absolute bottom-[-150px] right-[-25vw] h-[160vh] w-auto object-contain opacity-30 pointer-events-none z-0"
+        className="hidden md:block absolute bottom-[-150px] right-[-37vw] h-[160vh] w-auto object-contain opacity-30 pointer-events-none z-0"
       />
 
       {/* Ornamen Kiri Mobile */}
